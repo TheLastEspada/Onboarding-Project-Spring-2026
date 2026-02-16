@@ -101,6 +101,7 @@ reached.
 ![alt text](RPMfreq.png)
 
 Conclusions:
+
 From the two graphs created I concluded the following: The RPM shows a cyclical pattern, rising and falling in short intervals,
 indicating regular fluctuations it's operation, and the vehicle most frequently reached 2066.0 RPM.
 
