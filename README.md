@@ -10,7 +10,7 @@ The main goals of this project were:
     2. Visualize how the RPM of the car changes over time
     3. Identify and Visualize the top 10 most frequent RPM values
 
-Code explanation
+Code Explanation:
 
     import pandas as pd
     import matplotlib.pyplot as plt
@@ -19,7 +19,7 @@ Code explanation
     df = pd.read_csv("can_data.csv")
 
 In the first part of my code, I first imported the pandas and matplotlib libraries. I imported the can_data.csv using
-the pd.read_csv() method and assigned it to the variable "df"
+the pd.read_csv() method and assigned it to the variable "df".
 
     # Convert the timestamps into a more readable format
     t0 = df["timestamp"].iloc[0]
@@ -98,11 +98,9 @@ reached.
 
 ![alt text](RPMfreq.png)
 
-Conclusions
-From the two graphs created I concluded the following:
-    - The RPM shows a cyclical pattern, rising and falling in short intervals,
-    indicating regular fluctuations it's operation.
-    - The vehicle most frequently reached 2066.0 RPM
+Conclusions:
+From the two graphs created I concluded the following: The RPM shows a cyclical pattern, rising and falling in short intervals,
+indicating regular fluctuations it's operation, and the vehicle most frequently reached 2066.0 RPM.
 
 
 
