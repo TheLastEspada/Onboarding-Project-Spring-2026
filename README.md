@@ -7,8 +7,8 @@ Project Overview:
 This project demonstrates basic data analysis through the use of the pandas and matplotlib libraries.
 The main goals of this project were:
     1. Convert the timestamps into a more readable format
-    2. Visualise how the RPM of the car changes over time
-    3. Identify and Visualise the top 10 most frequent RPM values
+    2. Visualize how the RPM of the car changes over time
+    3. Identify and Visualize the top 10 most frequent RPM values
 
 Code explanation
 
@@ -32,7 +32,7 @@ the pd.read_csv() method and assigned it to the variable "df"
 
 
 Next I began the first task of the code, which was to clean up the timestamp column and create a more readable time column.
-To the I first had to find the first timestamp in the column and assigned it to the variable "t0". Then I created a new
+I first had to find the first timestamp in the column and assigned it to the variable "t0". Then I created a new
 Series inside the "df" titled "time (sec)" that contained each timestamp with t0 subtracted. This converted all timestamps
 into seconds relative to the first reading. Once this was done I dropped the timestamp column and reordered the new column
 to be the first in the data file.
@@ -57,7 +57,7 @@ to be the first in the data file.
 
 Next it was graphing the RPM over time using the new time (secs) column. I first converted
 the timestamps into minutes then, using the features from the matplotlib, I was able to
-generate a graph that visualised the changes of the RPM over time in minutes.
+generate a graph that visualized the changes of the RPM over time in minutes.
 
 ![alt text](RPMot.png)
 
@@ -67,7 +67,7 @@ generate a graph that visualised the changes of the RPM over time in minutes.
     # Create a new series containing the top 10 most frequent RPM values
     top_10_counts = counts.sort_values(ascending=False)[:10]
 
-Afterwards it was finding the top 10 most frequent RPM values. To do this I used the value_counts() method to
+Afterward it was finding the top 10 most frequent RPM values. To do this I used the value_counts() method to
 get the count of each value in the Series, and sorted them. I then assigned these values into the variable "count".
 Then I created a new variable called "top_10_counts", which I assigned to it the top 10 values in descending order.
 
@@ -102,7 +102,7 @@ Conclusions
 From the two graphs created I concluded the following:
     - The RPM shows a cyclical pattern, rising and falling in short intervals,
     indicating regular fluctuations it's operation.
-    - The the vehicle most frequently reached 2066.0 RPM
+    - The vehicle most frequently reached 2066.0 RPM
 
 
 
