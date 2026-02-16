@@ -5,6 +5,7 @@ Author: Alexander Ezigbo
 Date: February 15, 2026
 
 Project Overview:
+
 This project demonstrates basic data analysis through the use of the pandas and matplotlib libraries.
 The main goals of this project were:
     1. Convert the timestamps into a more readable format
